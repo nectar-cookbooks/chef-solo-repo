@@ -5,6 +5,6 @@
      "set_fqdn": "*"
   },
   "run_list": [
-    "recipe[qcloud::setup]"
+    "recipe[setup::default]"
   ]
 }
