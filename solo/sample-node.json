@@ -1,7 +1,7 @@
 {
   "name": "sample-chefsolo",
   "chef_environment": "_default",
-  "qcloud": {
+  "setup": {
      "set_fqdn": "*"
   },
   "run_list": [
