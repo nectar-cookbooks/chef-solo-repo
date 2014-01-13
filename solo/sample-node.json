@@ -1,0 +1,10 @@
+{
+  "name": "sample-chefsolo",
+  "chef_environment": "_default",
+  "qcloud": {
+     "set_fqdn": "*"
+  },
+  "run_list": [
+    "recipe[qcloud::setup]"
+  ]
+}

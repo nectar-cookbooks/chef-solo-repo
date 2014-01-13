@@ -1,0 +1,4 @@
+*~
+.chef
+cookbooks
+Berksfile.lock
