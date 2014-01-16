@@ -1,8 +1,14 @@
 Purpose
 =======
 
-This git repo contains "Berkshelf" prepopulated with the core NeCTAR cookbook collection, together with sample configs for Chef Solo.  The purpose is to support the "quick start" procedure for Chef Solo + Berkshelf described below.
+This git repo contains "Berkshelf" prepopulated with the core NeCTAR 
+cookbook collection (and dendencies), together with sample configs for 
+Chef Solo.  The aim of this repo is:
 
+* to support the "quick start" procedure for Chef Solo + Berkshelf 
+  described below, and
+
+* to facilitate "pulling" updates to the NeCTAR cookbook collection.
 
 Introduction to Chef and Berkshelf
 ==================================
@@ -88,3 +94,4 @@ Chef Solo and the recipes in this repo:
 If you intend to "get serious" with Chef, will need to do a lot more reading.  In addition, you will need to look into things like:
 * version control and backup of your "chef-solo" tree; e.g. the 'mynode.json', and
 * using Chef Server, either in the Open Source (unsupported) or Enterprise flavours.
+
