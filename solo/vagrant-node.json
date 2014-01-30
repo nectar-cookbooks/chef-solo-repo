@@ -1,0 +1,9 @@
+{
+  "name": "vagrant",
+  "chef_environment": "_default",
+  "setup": {
+  },
+  "run_list": [
+    "recipe[setup::default]"
+  ]
+}
