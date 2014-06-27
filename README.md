@@ -45,53 +45,7 @@ Berkshelf is a tool for managing the collection of Cookbooks that you use.  It d
 Getting Started
 ===============
 
-There is lots of material on the Opscode site about how to use Chef in its
-various forms.  But here's a quick "cheat sheet" to get yourself started with
-Chef Solo and the recipes in this repo:
+Please refer to the VWranglers site for instructions on how to get started
+with Chef and Berkshelf:
 
-1. Install git and the dependencies for Berkshelf.
-
-         sudo yum install git gcc gcc-c++ ruby-devel
-
-   or
-
-         sudo apt-get install git build-essential ruby-dev
-
-2. Install the latest version of Chef:
-
-         sudo bash -c "true && curl -L https://www.opscode.com/chef/install.sh | bash"
-
-3. Install Berkshelf and add 'berks' to your path
-
-         sudo /opt/chef/embedded/bin/gem install berkshelf
-         sudo ln -s /opt/chef/embedded/bin/berks /usr/local/bin
-
-4. Create a directory for doing chef solo work:
-
-         sudo mkdir /var/chef-solo
-         sudo chown <your-id> /var/chef-solo
-
-5. Clone this repo:
-
-         cd /var/chef-solo
-         git clone <the url>
-         cd cvl-chef
-
-6. Install the dependent cookbooks:
-
-         berks install
-
-7. Make a node definition:
-
-         cp solo/sample-node.json mynode.json
-         # edit mynode.json to add override attributes, 
-         #    change the runlist and so on
-
-8. Run the using chef-solo
-
-         sudo chef-solo -c solo/solo.rb -j mynode.json -ldebug
-
-If you intend to "get serious" with Chef, will need to do a lot more reading.  In addition, you will need to look into things like:
-* version control and backup of your "chef-solo" tree; e.g. the 'mynode.json', and
-* using Chef Server, either in the Open Source (unsupported) or Enterprise flavours.
-
+* https://espaces.edu.au/vwrangler/deployment-tools/opscode-chef-how-tos/getting-started-with-berkshelf
