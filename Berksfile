@@ -1,4 +1,4 @@
-site :opscode
+source "https://api.berkshelf.com"
 
 cookbook 'setup', github: 'nectar-cookbooks/setup'
 cookbook 'pvconv', github: 'nectar-cookbooks/pvconv'
