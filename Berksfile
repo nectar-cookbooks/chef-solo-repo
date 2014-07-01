@@ -1,4 +1,6 @@
+# For Berkshelf 2, use 'site' instead of 'source'
 source "https://api.berkshelf.com"
+#site :opscode
 
 cookbook 'setup', github: 'nectar-cookbooks/setup'
 cookbook 'pvconv', github: 'nectar-cookbooks/pvconv'
