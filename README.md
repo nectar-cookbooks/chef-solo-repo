@@ -60,6 +60,7 @@ Put the following into the "Customization Script" box:
 
 ```
 #!/bin/sh
-wget -O - https://github.com/nectar-cookbooks/chef-solo-repo/blob/dev/scripts/bootstrap-nectar.sh | /bin/sh
+wget -O - https://github.com/nectar-cookbooks/chef-solo-repo/raw/master/scripts/bootstrap-nectar.sh | /bin/sh > /root/bootstrap.out 2>&1 
 ```
 
+scripts/bootstrap-nectar.sh
