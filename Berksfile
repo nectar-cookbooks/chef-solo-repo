@@ -11,6 +11,7 @@ cookbook 'mediaflux', github: 'nectar-cookbooks/mediaflux'
 cookbook 'mytardis', github: 'nectar-cookbooks/mytardis'
 cookbook 'amanda', github: 'nectar-cookbooks/amanda'
 cookbook 'locale', github: 'nectar-cookbooks/locale'
+cookbook 'lamp', github: 'nectar-cookbooks/lamp'
 
 # required for setup::accounts to work on chef-solo
 cookbook 'chef-solo-search', github: 'edelight/chef-solo-search'
