@@ -33,7 +33,7 @@ sudo -u $LOW_USER cp solo/sample-node.json mynode.json
 
 echo
 echo "**** Fetching cookbooks ****"
-sudo -u $LOW_USER /usr/local/bin/berks vendor cookbooks
+sudo -u $LOW_USER berks vendor cookbooks
 
 echo
 echo "**** First chef run ... does basic setup ****"
