@@ -15,10 +15,10 @@ fi
 echo
 echo "**** Installing ChefDK ****"
 if [ -e /usr/bin/yum ] ; then
-    curl https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chefdk-0.2.0-2.el6.x86_64.rpm
+    curl -L https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chefdk-0.2.0-2.el6.x86_64.rpm > chefdk-0.2.0-2.el6.x86_64.rpm
     rpm -i chefdk-0.2.0-2.el6.x86_64.rpm
 else
-    curl https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.2.0-2_amd64.deb
+    curl -L https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.2.0-2_amd64.deb > chefdk_0.2.0-2_amd64.deb
     dpkg --install chefdk_0.2.0-2_amd64.deb
 fi
 
