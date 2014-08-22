@@ -12,6 +12,8 @@ cookbook 'mytardis', github: 'nectar-cookbooks/mytardis'
 cookbook 'amanda', github: 'nectar-cookbooks/amanda'
 cookbook 'locale', github: 'nectar-cookbooks/locale'
 cookbook 'lamp', github: 'nectar-cookbooks/lamp'
+cookbook 'pmwiki', github: 'nectar-cookbooks/pmwiki'
+cookbook 'drupal', github: 'nectar-cookbooks/drupal'
 
 # required for setup::accounts to work on chef-solo
 cookbook 'chef-solo-search', github: 'edelight/chef-solo-search'
