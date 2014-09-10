@@ -4,11 +4,11 @@
 #
 echo "**** Installing required packages ****"
 if [ -e /usr/bin/yum ] ; then
-  yum -y -q install curl git
+  yum -y -q install curl git gcc gcc-c++ ruby-devel tar autoconf mysql-devel 
   LOW_USER=ec2-user
 else
   apt-get -y -qq update
-  apt-get -y -qq install curl git 
+  apt-get -y -qq install curl git build-essential libmysqlclient-dev
   LOW_USER=ubuntu
 fi
 
