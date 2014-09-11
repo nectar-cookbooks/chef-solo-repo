@@ -16,7 +16,7 @@ cookbook 'pmwiki', github: 'nectar-cookbooks/pmwiki'
 cookbook 'drupal', github: 'nectar-cookbooks/drupal'
 
 # required by the drupal cookbook
-cookbook 'drush', github: 'msonnabaum/chef-drush'
+cookbook 'drush', github: 'benclark/chef-drush'
 
 # required for setup::accounts to work on chef-solo
 cookbook 'chef-solo-search', github: 'edelight/chef-solo-search'
