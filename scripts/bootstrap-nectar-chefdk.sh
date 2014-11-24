@@ -5,11 +5,11 @@
 echo "**** Installing required packages ****"
 if [ -e /usr/bin/yum ] ; then
   yum -y -q install curl git gcc gcc-c++ ruby-devel tar autoconf mysql-devel 
-  echo operator is ${LOW_USER:=ec2-user}
+  echo chef solo admin a/c is ${LOW_USER:=ec2-user}
 else
   apt-get -y -qq update
   apt-get -y -qq install curl git build-essential libmysqlclient-dev
-  echo operator is ${LOW_USER:=ubuntu}
+  echo chef solo admin a/c is ${LOW_USER:=ubuntu}
 fi
 
 echo temp directory is ${TMP:=/tmp}
